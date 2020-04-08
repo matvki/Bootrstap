@@ -17,3 +17,9 @@ a:hover{
     color: rgb(18, 133, 65);
     text-decoration: none;
 }
+.title{
+    background-color: rgba(128, 128, 128, 0.678);
+}
+#txt{
+    text-align: center;
+}

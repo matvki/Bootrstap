@@ -26,24 +26,23 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>Tree-Facorie !</h1>
-        <h5>Tout autour de l'arbre</h5>
-      </div>
-      <img src="./img/feuilles-head.jpg" class="d-block w-100">
-      
-    </div>
-    <div class="carousel-item">
-      <img src="./img/Baobab.jpg" class="d-block w-100">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>Tree-Facorie !</h1>
+      <img src="./img/mangrove.jpg" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block title">
+        <h1>Tree-Factorie !</h1>
         <h5>Tout autour de l'arbre</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./img/arbreCarousselle.jpg" class="d-block w-100">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>Tree-Facorie !</h1>
+      <img src="./img/BaobabRD.jpg" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block title">
+        <h1>Tree-Factorie !</h1>
+        <h5>Tout autour de l'arbre</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/arbreCarousselleRD.jpg" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block title">
+        <h1>Tree-Factorie !</h1>
         <h5>Tout autour de l'arbre</h5>
       </div>
     </div>
@@ -59,7 +58,7 @@
 </div>
 
 
-  <div class="container">
+  <div id="txt" class="container">
 <p>Cette entreprise d'honnête travailleur vous propose le plus large choix en matière d'arbre en tout genre.</p>
 <p>Il vous faut un petit arbre d'intérieur ? <a href="#">nous avons ce qu'il vous faut !</a></p>
 <p>Il vous faut un arbre fruitier déjà adulte ? <a href="#">nous avons ce qu'il vous faut !</a></p>

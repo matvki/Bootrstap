@@ -1,24 +1,3 @@
-li{
-    list-style: none;
-}
-nav{
-    width: 100vw;
-    background-color: rgba(138, 207, 81, 0.808);
-}
-nav ul{
-    justify-content: space-evenly;
-    margin-bottom: 0;
-    align-items: center;
-    height: 4vh;
-}
-nav>ul>li>a{
-    color: grey;
-}
-nav>ul>li>a:hover{
-    color: rgb(45, 125, 230);
-    text-decoration: none;
-    transform: scale(1.2);
-}
 #logo{
     height: 30px;
 }
