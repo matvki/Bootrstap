@@ -1,2 +1,4 @@
 Projet pour apprendre le Bootstrap
-Php 7.0 grace a une machine virtuel, ubuntu xenial 64
+
+
+Via machine Virtuel ubuntu xenial 64, en php7.0
