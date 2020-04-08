@@ -63,7 +63,7 @@
 <p>Cette entreprise d'honnête travailleur vous propose le plus large choix en matière d'arbre en tout genre.</p>
 <p>Il vous faut un petit arbre d'intérieur ? <a href="#">nous avons ce qu'il vous faut !</a></p>
 <p>Il vous faut un arbre fruitier déjà adulte ? <a href="#">nous avons ce qu'il vous faut !</a></p>
-<p>Bref vous l'aurais compris nous pouvons vous avoir tout les abres existant.</p>
+<p>Bref vous l'aurez compris nous pouvons vous avoir tout les abres existant.</p>
 </div>
   
 

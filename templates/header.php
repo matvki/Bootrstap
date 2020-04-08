@@ -6,10 +6,10 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Tree-cueil <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Tree-cueil <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Tree-Shop</a>
+        <a class="nav-link" href="shop.php">Tree-Shop</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#">Tree-info</a>
