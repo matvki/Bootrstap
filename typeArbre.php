@@ -31,7 +31,7 @@
     <div class="container">
         <h2>Ce que nous avons trouvé selon vos choix</h2>
         <div class="row row-cols-2"><?php foreach ($trees as $tree) { ?>
-            <div class="frame">
+                <div class="frame">
                     <div class="picture">
                         <img src="<?= $tree['image'] ?>" alt="tree" class="img-thumbnail">
                     </div>
@@ -45,9 +45,13 @@
                                                                                 echo 'semi-persistante';
                                                                             } ?></p>
                         <p>Fruit : <?= $tree['fruit'] ?> </p>
+                        <form action="./controllers/requestPanier.php" method="POST">
+                            <input type="hidden" name="id" value="<?= $tree['id'] ?>">
+                            <input type="submit" class="btn btn-dark" value="ajouter au panier">
+                        </form>
                     </div>
-                
-            </div><?php } ?>
+
+                </div><?php } ?>
         </div>
     </div>
 

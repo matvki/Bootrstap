@@ -1,3 +1,9 @@
+<?php session_start();
+if (!isset($_SESSION['basket'])) {
+  $_SESSION['basket'] = 0;
+}
+?>
+
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">Tree-Favtorie <img src="./img/tree.png" id="logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -6,16 +12,18 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Tree-cueil</a>
+        <a class="nav-link" href="/">Tree-cueil</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Tree-shop</a>
+        <a class="nav-link" href="./shop.php">Tree-shop</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button type="button" class="btn btn-primary my-2 my-lg-0">
-        Shop <span class="badge badge-light"><?= 0 ?></span>
-      </button>
+      <a href="./shopPlace.php">
+        <button type="button" class="btn btn-primary my-2 my-lg-0">
+          Panier <span class="badge badge-light"><?= $_SESSION['basket'] ?></span>
+        </button>
+      </a>
     </form>
   </div>
 </nav>
