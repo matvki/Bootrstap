@@ -1,0 +1,15 @@
+#title{
+    text-align: center;
+    background-color: grey;
+    padding: 5px;
+}
+h1, h5{
+    color: greenyellow;
+}
+h1{
+    font-size: 70px;
+    font-family: "Strawberry Blossom";
+}
+#title2{
+    text-align: center;
+}

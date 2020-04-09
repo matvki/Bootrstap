@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -11,16 +12,29 @@
   <link rel="icon" type="image/png" href="./img/tree.png" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/header-footer.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/shop.css">
   <title>Tree-Factorie</title>
 </head>
+
 <body>
-    <?php include_once './templates/header.php' ?>
+  <?php include_once './templates/header.php' ?>
+  <div id="title" class="container-fluid">
+    <h1>Tree-shop</h1>
+    <h5>L'endroit parfait pour acheter ses arbres !</h5>
+  </div>
+  <div id="title2" class="container-fluid">
+    <h2>Tout nos types d'arbres:</h2>
+  </div>
+  <div class="unknow container-fluid"></div>
+  <div class="container">
+    <div class="col-md-4">
 
+    </div>
 
-    
-</div>
-  
+  </div>
+
+  </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -29,4 +43,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

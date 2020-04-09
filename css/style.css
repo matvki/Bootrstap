@@ -8,3 +8,10 @@ body{
 .flex{
     display: flex;
 }
+.unknow{
+    height: 20px;
+}
+@font-face{
+    font-family: "Strawberry Blossom";
+    src: url('strawberryBlossom.ttf')
+}
