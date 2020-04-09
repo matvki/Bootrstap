@@ -26,14 +26,73 @@
     <h2>Tout nos types d'arbres:</h2>
   </div>
   <div class="unknow container-fluid"></div>
-  <div class="container">
-    <div class="col-md-4">
-
+  <form action="./typeArbre.php" method="POST">
+    <div class="container">
+      <h2>Type de Feuillage</h2>
+      <div class="row row-cols-3">
+        <button id="caduc" class="choice" name="leaf" value="1">
+          <style>
+            #caduc {
+              background-image: url(./img/ginko.jpg);
+              background-position: center;
+            }
+          </style>
+          <div class="mptxt">
+            <p>Caduc</p>
+          </div>
+        </button>
+        <button id="persistant" class="choice" name="leaf" value="2">
+          <style>
+            #persistant {
+              background-image: url(./img/pin.jpg);
+              background-position: center;
+            }
+          </style>
+          <div class="mptxt">
+            <p>Persistant</p>
+          </div>
+        </button>
+        <button id="semi" class="choice" name="leaf" value="3">
+          <style>
+            #semi {
+              background-image: url(./img/mangrove.jpg);
+              background-position: center;
+            }
+          </style>
+          <div class="mptxt">
+            <p>Semi-persistant</p>
+          </div>
+        </button>
+      </div>
+      <h2>Fruitier ou non</h2>
+      <div class="row row-cols-2">
+        <button id="fruitier" class="choice" name="fruit" value="1">
+          <style>
+            #fruitier {
+              background-image: url(./img/pommier.jpg);
+              background-position: center;
+            }
+          </style>
+          <div class="mptxt">
+            <p>Fruitier</p>
+          </div>
+        </button>
+        <button id="nonFruitier" class="choice" name="fruit" value="2">
+          <style>
+            #nonFruitier {
+              background-image: url(./img/Baobab.jpg);
+              background-position: center;
+            }
+          </style>
+          <div class="mptxt">
+            <p>Non Fruitier</p>
+          </div>
+        </button>
+      </div>
     </div>
+  </form>
 
-  </div>
 
-  </div>
 
 
   <!-- Optional JavaScript -->
