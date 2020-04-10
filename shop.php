@@ -17,7 +17,16 @@
 </head>
 
 <body>
-  <?php include_once './templates/header.php' ?>
+  <?php include_once './templates/header.php';
+  if (!isset($_SESSION['name'])) { ?>
+    <div class="alert alert-danger" role="alert">
+      Attention connectez vous pour pouvoir avoir accès au panier !
+    </div>
+<?php } if (isset($_SESSION['noName'])) { ?>
+    <div class="alert alert-danger" role="alert">
+      Attention vous ne pouvez pas sauvegarder votre panier !
+    </div>
+<?php unset($_SESSION['noName']); } ?>
   <div id="title" class="container-fluid">
     <h1>Tree-shop</h1>
     <h5>L'endroit parfait pour acheter ses arbres !</h5>
