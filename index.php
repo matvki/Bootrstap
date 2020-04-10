@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <?php include_once './templates/header.php' ?>
+  <?php include_once './templates/header.php'; if (isset($_SESSION['basket'])) { session_destroy();} ;   ?>
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>

@@ -92,7 +92,7 @@
     </div>
   </form>
 
-
+<?php var_dump($_SESSION) ?>
 
 
   <!-- Optional JavaScript -->
