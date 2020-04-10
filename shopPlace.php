@@ -25,7 +25,7 @@
     <div class="unknow container-fluid"></div>
     <div class="container">
         <h2>Ce que vous voulez prendre: </h2>
-        <div class="row row-col-2">
+        <div class="row row-cols-3">
             <?php foreach ($_SESSION['shop'] as $id => $value) {
                 include './controllers/requestBasket.php' ?>
                 <div class="frame">
