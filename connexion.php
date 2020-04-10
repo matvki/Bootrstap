@@ -28,14 +28,14 @@
             Attention le mot de passe n'est pas bon !!
         </div>
     <?php unset($_SESSION['wrongPass']);
-    } ?>
-    <?php if (isset($_SESSION['mdp'])) { ?>
+    } 
+     if (isset($_SESSION['mdp'])) { ?>
         <div class="alert alert-danger" role="alert">
             Attention les deux mots de passe ne sont pas identique !!
         </div>
     <?php unset($_SESSION['mdp']);
-    } ?>
-    <?php if (isset($_SESSION['creat'])) { ?>
+    } 
+     if (isset($_SESSION['creat'])) { ?>
         <div class="alert alert-success" role="alert">
             Le compte a bien été créé !!
         </div>

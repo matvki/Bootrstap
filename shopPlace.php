@@ -18,6 +18,9 @@
 
 <body>
     <?php include_once './templates/header.php'; ?>
+    <?php if ($_SESSION['basket'] == 0) {
+        $_SESSION['empty'] = 'coucou';header('Location: /');
+    } ?>
     <div id="title" class="container-fluid">
         <h1>Tree-shop</h1>
         <h5>L'endroit parfait pour acheter ses arbres !</h5>

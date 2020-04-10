@@ -17,54 +17,54 @@
 </head>
 
 <body>
-  <?php include_once './templates/header.php'; if (isset($_SESSION['basket'])) { session_destroy();} ;   ?>
+  <?php include_once './templates/header.php' ?>
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./img/mangrove.jpg" class="d-block w-100">
-      <div class="carousel-caption d-none d-md-block title">
-        <h1>Tree-Factorie !</h1>
-        <h5>Tout autour de l'arbre</h5>
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/mangrove.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block title">
+          <h1>Tree-Factorie !</h1>
+          <h5>Tout autour de l'arbre</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/BaobabRD.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block title">
+          <h1>Tree-Factorie !</h1>
+          <h5>Tout autour de l'arbre</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/arbreCarousselleRD.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block title">
+          <h1>Tree-Factorie !</h1>
+          <h5>Tout autour de l'arbre</h5>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="./img/BaobabRD.jpg" class="d-block w-100">
-      <div class="carousel-caption d-none d-md-block title">
-        <h1>Tree-Factorie !</h1>
-        <h5>Tout autour de l'arbre</h5>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./img/arbreCarousselleRD.jpg" class="d-block w-100">
-      <div class="carousel-caption d-none d-md-block title">
-        <h1>Tree-Factorie !</h1>
-        <h5>Tout autour de l'arbre</h5>
-      </div>
-    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Précédent</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Suivant</span>
+    </a>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Précédent</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Suivant</span>
-  </a>
-</div>
 
 
   <div id="txt" class="container">
-<p>Cette entreprise d'honnête travailleur vous propose le plus large choix en matière d'arbre en tout genre.</p>
-<p>Il vous faut un arbre fruitier ? <a href="./shop.php">nous avons ce qu'il vous faut !</a></p>
-<p>Il vous faut un arbre qui ne perd pas ses feuilles ? <a href="./shop.php">nous avons ce qu'il vous faut !</a></p>
-<p>Bref vous l'aurez compris nous pouvons vous avoir tout les abres existant.</p>
-</div>
-  
+    <p>Cette entreprise d'honnête travailleur vous propose le plus large choix en matière d'arbre en tout genre.</p>
+    <p>Il vous faut un arbre fruitier ? <a href="./shop.php">nous avons ce qu'il vous faut !</a></p>
+    <p>Il vous faut un arbre qui ne perd pas ses feuilles ? <a href="./shop.php">nous avons ce qu'il vous faut !</a></p>
+    <p>Bref vous l'aurez compris nous pouvons vous avoir tout les abres existant.</p>
+  </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

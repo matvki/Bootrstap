@@ -1,6 +1,6 @@
 <?php session_start();?>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">Tree-Favtorie <img src="./img/tree.png" id="logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -17,10 +17,10 @@
     <?php if (isset($_SESSION['name'])) { ?>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Profile
+          <?= $_SESSION['name'] ?>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Infos</a>
+          <a class="dropdown-item" href="#">En travaux !</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="./controllers/delog.php">Déconnexion</a>
         </div>
@@ -43,3 +43,9 @@
     <?php } ?>
   </div>
 </nav>
+<?php if (isset($_SESSION['empty'])) { ?>
+    <div class="alert alert-danger" role="alert">
+      Attention vous n'avez rien pour le moment dans votre panier !
+    </div>
+  <?php unset($_SESSION['empty']);
+  } ?>
