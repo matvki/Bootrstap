@@ -6,6 +6,7 @@ if (isset($_SESSION['shop'])) {
     foreach ($_SESSION['shop'] as $id ) {
         if ($id = $_POST['id']) {
         $_SESSION['shop'][$id]['qtt'] = $_SESSION['shop'][$id]['qtt'] +1;
+        var_dump($id);
         header('Location: /shop.php');die;
     }
     }

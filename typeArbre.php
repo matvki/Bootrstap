@@ -23,9 +23,6 @@
         <h1>Tree-shop</h1>
         <h5>L'endroit parfait pour acheter ses arbres !</h5>
     </div>
-    <div id="title2" class="container-fluid">
-        <h2>Tout nos types d'arbres:</h2>
-    </div>
     <div class="unknow container-fluid"></div>
 
     <div class="container">
@@ -45,7 +42,7 @@
                                                                                 echo 'semi-persistante';
                                                                             } ?></p>
                         <p>Fruit : <?= $tree['fruit'] ?> </p>
-                        <form action="./controllers/requestPanier.php" method="POST">
+                        <form action="./controllers/basket.php" method="POST">
                             <input type="hidden" name="id" value="<?= $tree['id'] ?>">
                             <input type="submit" class="btn btn-dark" value="ajouter au panier">
                         </form>
