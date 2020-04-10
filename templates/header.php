@@ -1,8 +1,4 @@
-<?php session_start();
-if (!isset($_SESSION['basket'])) {
-  $_SESSION['basket'] = 0;
-}
-?>
+<?php session_start();?>
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">Tree-Favtorie <img src="./img/tree.png" id="logo"></a>
@@ -18,12 +14,32 @@ if (!isset($_SESSION['basket'])) {
         <a class="nav-link" href="./shop.php">Tree-shop</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <a href="./shopPlace.php">
-        <button type="button" class="btn btn-primary my-2 my-lg-0">
-          Panier <span class="badge badge-light"><?= $_SESSION['basket'] ?></span>
-        </button>
-      </a>
-    </form>
+    <?php if (isset($_SESSION['name'])) { ?>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Infos</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="./controllers/delog.php">Déconnexion</a>
+        </div>
+      </li>
+      <form class="form-inline my-2 my-lg-0">
+        <a href="./shopPlace.php">
+          <button type="button" class="btn btn-primary my-2 my-lg-0">
+            Panier <span class="badge badge-light"><?= $_SESSION['basket'] ?></span>
+          </button>
+        </a>
+      </form>
+    <?php } else { ?>
+      <form class="form-inline my-2 my-lg-0">
+        <a href="./connexion.php">
+          <button type="button" class="btn btn-primary my-2 my-lg-0">
+            connexion <span class="badge badge-light"></span>
+          </button>
+        </a>
+      </form>
+    <?php } ?>
   </div>
 </nav>

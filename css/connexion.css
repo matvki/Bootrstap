@@ -1,0 +1,25 @@
+#title{
+    margin-top: 45px;
+    text-align: center;
+    background-color: grey;
+    padding: 5px;
+}
+h1, h5{
+    color: greenyellow;
+}
+h1{
+    font-size: 70px;
+    font-family: "Strawberry Blossom";
+}
+#title2{
+    text-align: center;
+}
+.container{
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.formI, .formC{
+    background-color: rgba(126, 126, 126, 0.26);
+}
